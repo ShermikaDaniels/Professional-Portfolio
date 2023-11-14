@@ -5,43 +5,193 @@
   --default-font-family: "Poppins", sans-serif;
 }
 
-body {
-  /* background-image: url("../images/phishing.png");*/
-  background-color: lightblue;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 30px;
-}
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+      *,
+      *:before,
+      *:after {
+      	box-sizing: inherit;
+      	margin: 0;
+      	padding: 0;
+      	border: 0 none;
+      	position: relative;
+      }
 
-img {
-  width: 300px;
-  height: 300px;
-  border: solid black 5px;
-}
+      body {
+      	background: gray
+      	min-height: 300px;
+      	box-sizing: border-box;
+      	font-family: 'Vollkorn', sans-serif;
+      	font-size: 1rem;
+      	color: #000;
+      }
 
-h1 {
-  text-align: center;
-}
+      .centered {
+      	text-align: center;
+      }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font-family);
-  font-weight: bold;
-  text-align: left;
-}
+      body > article {
+      	display: flex;
+      	flex-wrap: wrap;
+      }
 
-p {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: left;
-}
+      figure {
+      	background: #eee;
+      	width: calc( 50% + 1px);
+      	height: 100vh;
+      	margin: 0 auto 10vh 0;
+      	position: sticky;
+      	top: 0;
+      	overflow: hidden;
+      	box-shadow: 4px -4px 8px rgba(0, 0, 0, .4);
+      }
+
+      figure::after {
+      	content: '';
+      	position: absolute;
+      	top: 5vmin;
+      	right: 5vmin;
+      	bottom: 5vmin;
+      	left: 45%;
+      	pointer-events: none;
+      }
+
+      figure:nth-of-type(2n)::after {
+      	right: 45%;
+      	left: 5vmin;
+      }
+
+      section {
+      	background: whitesmoke;
+      	width: calc(50% + 1px);
+      	height: 100vh;
+      	margin: 0 0 10vh auto;
+      	position: sticky;
+      	top: 0;
+      	overflow: hidden;
+      	padding: 5vmin;
+      	box-shadow: -4px -4px 8px rgba(0, 0, 0, .4);
+      }
+
+      figure:nth-of-type(1),
+      section:nth-of-type(1) {
+      	margin: 0 0 10vh 0;
+      	width: 50%;
+      }
+
+      figure:nth-of-type(2n) {
+      	margin: 0 0 10vh auto;
+      	box-shadow: -4px -4px 8px rgba(0, 0, 0, .4);
+      }
+
+      section:nth-of-type(2n) {
+      	margin: 0 auto 10vh 0;
+      	box-shadow: 4px -4px 8px rgba(0, 0, 0, .4);
+      }
+
+      figure:last-of-type,
+      section:last-of-type {
+      	margin-bottom: 0;
+      }
+
+      section::before {
+      	background: inherit;
+      	z-index: 1;
+      	content: '';
+      	position: absolute;
+      	top: 50%;
+      	left: 0;
+      	width: 7vmin;
+      	height: 7vmin;
+      	transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
+      	clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+      	box-shadow: -4px -2px 8px rgba(0, 0, 0, .4);
+      	border-radius: 1.5vmin 0 0 0;
+      }
+
+      section:nth-of-type(2n)::before {
+      	left: auto;
+      	right: 0;
+      	transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
+      }
+
+      section::after {
+      	content: '';
+      	position: absolute;
+      	top: 5vmin;
+      	right: 45%;
+      	bottom: 5vmin;
+      	left: 5vmin;
+      	pointer-events: none;
+      }
+
+      section:nth-of-type(2n):after {
+      
+        padding: 10px 30px;
+      }
+
+      figure img {
+      	min-width: 100%;
+      	min-height: 100%;
+      	object-fit: cover;
+      	object-position: center;
+      }
+
+      section > div {
+      	display: flex;
+      	flex-direction: column;
+      	align-items: center;
+      	height: 100%;
+      	padding: 1rem;
+      }
+
+      h1 {
+      	margin: 15% 0 10%;
+      	font-size: 50pt;
+      	text-align: center;
+      	font-weight: 700;
+      	line-height: 1;
+      	word-spacing: .5rem;
+      	color: orange;
+      	​
+      }
+
+      h2 {
+      	margin: 15% 0 15%;
+      	font-size: 50pt;
+      	text-align: center;
+      	font-weight: 700;
+      	line-height: 1;
+      	word-spacing: .5rem;
+      	color: orange
+      }
+
+      p {
+      	text-align: left;
+      	width: 100%;
+      	font-family: Arial, Helvetica, sans-serif;
+      	font-weight: 400;
+      	font-size: 18pt;
+      	margin-bottom: 5%;
+      }
+
+      a:hover,
+      a:focus {
+      	-webkit-text-stroke: 1px #999;
+      }
+
+      ​ .lucky {
+      	font-family: Arial, Helvetica, sans-serif;
+      	font-size: 25pt;
+      	font-style: normal;
+      	margin-bottom: 15%;
+      }
+
+      .logo {
+      	text-align: center;
+      	font-size: 10pt;
+      }
+    </style>
 
 nav {
   padding: 20px 0;
@@ -80,5 +230,30 @@ nav li.active a {
     font-size: 44px;
     line-height: 1.5;
     text-align: center;
+  }
+
+       p {
+      	text-align: center;
+      	width: 100%;
+      	font-family: Arial, Helvetica, sans-serif;
+      	font-weight: 200;
+      	font-size: 12pt;
+      	margin-bottom: 5%;
+      }
+
+      figure img {
+      	min-width: auto;
+      	min-height: auto;
+      	object-fit: cover;
+      	object-position: center;
+      }
+    body {
+      	background: gray
+      	min-height: 100px;
+      	box-sizing: border-box;
+      	font-family: 'Vollkorn', sans-serif;
+      	font-size: 1rem;
+      	color: #000;
+      }
   }
 }
