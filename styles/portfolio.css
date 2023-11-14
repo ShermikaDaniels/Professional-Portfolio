@@ -7,6 +7,7 @@
 
 body {
   font-family: var(--default-font-family);
+  background-color: whitesmoke;
 }
 
 h1,
@@ -117,6 +118,157 @@ p {
   max-height: 40px;
 }
 
+.resume-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px;
+  border: solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  background: white;
+  background-repeat: no-repeat;
+}
+
+.example-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px;
+  border: solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  background-image: url("../images/WellsFargo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.resume-container a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.example-container a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.resume-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.example-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.resume-container p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.example-container p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.resume-container h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.example-container h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-container h2 {
+  text-align: left;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.example-container h2 {
+  text-align: left;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-container h3 {
+  color: blue;
+  text-align: left;
+  font-size: 20px;
+}
+
+.example-container h3 {
+  color: blue;
+  text-align: left;
+  font-size: 20px;
+}
+
+.resume-container h4 {
+  text-align: left;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.example-container h4 {
+  text-align: left;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-container button:hover {
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.example-container button:hover {
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.resume-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.example-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.resume-container button {
+  padding: 10px 20px;
+  color: blue;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+  background: transparent;
+  transition: all 150ms ease-in-out;
+  border-radius: 10px;
+}
+
+.example-container button {
+  padding: 10px 20px;
+  color: blue;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+  background: transparent;
+  transition: all 150ms ease-in-out;
+  border-radius: 10px;
+}
+
 nav {
   padding: 20px 0;
 }
@@ -185,13 +337,15 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 900px) {
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 44px;
     line-height: 1.5;
-  }
-
-  h2 {
-    font-size: 44px;
+    text-align: center;
   }
 
   .project-description {
