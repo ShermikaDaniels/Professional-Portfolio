@@ -6,9 +6,10 @@ function login() {
   const validPassword = "password";
 
   if (usernameInput === validUsername && passwordInput === validPassword) {
-    document.getElementById("loginMessage").innerText = "Login successful!";
+    document.getElementById("loginMessage").innerText =
+      "You've been Phished!, but not really this is just an example.";
   } else {
     document.getElementById("loginMessage").innerText =
-      "Invalid username or password. Please try again.";
+      "You've been Phished!, but not really this is just an example.";
   }
 }
