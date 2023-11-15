@@ -269,6 +269,45 @@ p {
   border-radius: 10px;
 }
 
+.fb-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px;
+  border: solid black;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  background: whitesmoke;
+  text-align: left;
+}
+
+.fb-container img {
+  max-width: 40px;
+  margin: 0 auto;
+}
+
+.fb-container button {
+  color: blue;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.fb-container button:hover {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.fbcode-container {
+  max-width: 200px;
+  max-height: 100px;
+  margin: 0 auto;
+  padding: 11px;
+  border: solid black;
+  background: lightblue;
+  font-weight: bold;
+  text-align: center;
+}
+
 nav {
   padding: 20px 0;
 }
@@ -334,6 +373,11 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+small {
+  font-size: 8pt;
+  color: lightgray;
 }
 
 @media (max-width: 900px) {

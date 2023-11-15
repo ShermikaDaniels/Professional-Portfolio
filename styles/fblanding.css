@@ -1,0 +1,156 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+    *,
+    *:before,
+    *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    position: relative;
+    }
+
+    body{
+    background-image: url("../images/phishtank.png");
+    font-size: 18px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+
+    }
+
+    P{
+        font-weight: bolder;
+    }
+
+
+    h1 {
+        text-align: center;
+        color: purple;
+        font-weight: bolder;
+    }
+
+    h2{
+        text-align: center;
+    } 
+
+    img{
+  box-shadow: 10px 10px 20px lightblue;
+  opacity: 0.8;
+  border-radius: 10px;
+
+    }
+
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+}
+
+  .fblanding-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: left;
+  }
+
+  .fblanding-container:hover {
+    background-color: lightskyblue;
+    color: black;
+    opacity: 0.8;
+    margin: 20px;
+    border-radius: 70px;
+    transition: all 100ms ease-in-out;
+
+    
+  }
+
+  ul {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 30px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+    p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20pt;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black
+  }
+
+  img {
+    width: 100%; 
+    height: 0 auto;
+    object-fit: cover;
+    object-position: center;
+  }
+     
+  body {
+    background: whitesmoke
+    min-height: 100px;
+    box-sizing: border-box;
+    font-family: 'Vollkorn', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+  }
+
+  .fblanding-container:hover {
+    background-color: lightskyblue;
+    color: black;
+    opacity: 0.8;
+    margin: 20px;
+    border-radius: 70px;
+    transition: all 100ms ease-in-out;
+    text-align: center;
+  }
+
+
+
+  }
+
