@@ -1,0 +1,182 @@
+body {
+  background-image: url("../images/FBbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: blue;
+  font-size: 50pt;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 18pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  padding: 20px 10px;
+  color: whitesmoke;
+  text-align: right;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav a:hover {
+  color: blueviolet;
+  transition: all 100ms ease-in-out;
+}
+nav li.active a {
+  transition: all 100ms ease-in-out;
+}
+
+button {
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+}
+
+button:hover {
+  background-color: blueviolet;
+  color: black;
+}
+
+.container {
+  background-color: lightblue;
+  opacity: 0.8;
+  padding: 80px;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1000px;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  /* Optionally, add padding, margin, or other styles */
+}
+
+.right-container {
+  border: 1pt solid lightblue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  box-shadow: 4px -4px 8px lightblue;
+  border-radius: 10px;
+  opacity: 0.8;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    color: blue;
+    font-size: 40pt;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav {
+    padding: 20px 10px;
+    color: whitesmoke;
+    text-align: right;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  nav a:hover {
+    color: blueviolet;
+    transition: all 100ms ease-in-out;
+  }
+  nav li.active a {
+    transition: all 100ms ease-in-out;
+  }
+
+  button {
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+  }
+
+  button:hover {
+    background-color: blueviolet;
+    color: black;
+  }
+
+  .container {
+    background-color: lightblue;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 800px;
+    border-radius: 5px;
+  }
+
+  .left-container,
+  .right-container {
+    flex: 1;
+    /* Optionally, add padding, margin, or other styles */
+  }
+
+  .right-container {
+    border: 1pt solid lightblue;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px -4px 8px lightblue;
+    border-radius: 10px;
+    opacity: 0.8;
+    background-color: whitesmoke;
+    font-size: 12pt;
+  }
+}
